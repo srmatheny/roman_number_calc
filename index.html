@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>    <title>Document</title>
+</head>
+<body>
+    
+    <div class="header"></div>
+    <div>
+        <h1>Roman Numeral Calculator</h1>
+
+
+        <script>
+            const person = {
+                name: {
+                    first:  "Bob",
+                    last:   "Smith",
+                },
+                age: 32,
+                bio () {
+                    console.log(`${this.name.first} ${this.name.last} is ${this.age} years old.`);
+                },
+                introduceSelf () {
+                    console.log(`Hi! I'm ${this.name.first}.`);
+                },
+            };
+            const myDataName = "height";
+            const myDataValue = "1.75m";
+            person[myDataName] = myDataValue;
+
+            
+            function groupById(arr) {
+                return arr.reduce((obj, value) => {
+                    obj[value.id] = value; return obj;
+                }, {});
+            
+            };
+
+            let users = [
+                {id: "john", name: "John Smith", age: 20,},
+                {id: "ann", name: "Ann Smith", age: 24,},
+                {id:  "mary", name: "MaryPete Peterson", age: 29},
+            ];
+
+            let usersById = groupById(users);
+
+            console.log(usersById);
+
+
+            //function getAveragrAge(arr)    {
+            //    return arr.reduce((prev, arr) => prev + arr.age, 0) / arr.length;
+            //}
+            //let z = getAveragrAge(arr);
+            //console.log(z);
+
+            /*
+            let names = users.map( item => item.name);
+
+
+            alert(names);
+            */
+
+            /*
+            let john = { name: "John", surname: "Smith", id: 1 };
+            let pete = { name: "Pete", surname: "Hunt", id: 2 };
+            let mary = { name: "Mary", surname: "Key", id: 3 };
+
+            let users = [ john, pete, mary ];
+
+            let usersMapped = users.map(user => ({
+                    fullname: `${user.name} ${user.surname}`,
+                    id: user.id
+            }));
+            
+            usersMapped = [
+              { fullName: "John Smith", id: 1 },
+              { fullName: "Pete Hunt", id: 2 },
+              { fullName: "Mary Key", id: 3 }
+            ]
+            
+
+            alert( usersMapped[0].id ) // 1
+            alert( usersMapped[0].fullName ) // John Smith
+            */
+
+
+
+
+
+        </script>
+    </div>
+
+
+</body>
+</html>
